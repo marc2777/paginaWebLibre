@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      img {
+        display: block;
+      }
+      * {
+        font-family: "Montserrat", sans-serif;
+        font-family: "Source Code Pro", monospace;
+      }
+      body {
+        background-color: white;
+      }
+      .heading-principal {
+        text-align: center;
+        font-size: 3rem;
+      }
+      .box-contenido {
+        margin: 0 10rem;
+      }
+      .lista-nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+      .header-box {
+        margin-bottom: 5rem;
+        background-color: black;
+        color: white;
+        padding: 2rem;
+      }
+      .imagen-historia {
+        margin: 0 auto;
+        background-position: center;
+      }
+      .imagen-banda {
+        margin: 0 auto;
+      }
+      header a {
+        text-decoration: none;
+        color: yellow;
+      }
+      h2 {
+        margin: 5rem 0;
+      }
+      .integrantes-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+
+      .imagen-cerati {
+        width: 20rem;
+        height: 20rem;
+      }
+      .imagen-zeta {
+        width: 20rem;
+        height: 20rem;
+      }
+      .imagen-charly {
+        width: 20rem;
+        height: 20rem;
+      }
+      .disco1 {
+        background-color: #f7f200;
+      }
+      ul {
+        list-style: none;
+      }
+      /*DISCOS*/
+      .discos-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Tres columnas iguales */
+        grid-template-rows: repeat(2, 240px); /* Dos filas iguales de 150px */
+        gap: 2rem;
+      }
+      .imagen-disco {
+        width: 15rem;
+        height: 15rem;
+      }
+      .disco {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .nombre-disco {
+        text-align: center;
+      }
+      .year-disco {
+        text-align: center;
+      }
+      .disco-2 {
+        background-color: palevioletred;
+      }
+      .disco1 {
+        background-color: whitesmoke;
+      }
+      .disco3 {
+        background-color: rgb(202, 147, 108);
+      }
+      .disco6 {
+        background-color: green;
+        color: white;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-box" id="menu">
+      <h1 class="heading-principal">Soda Stereo</h1>
+
+      <nav class="nav-menu">
+        <ul class="lista-nav">
+          <li><a href="#historia">Historia Banda</a></li>
+          <li><a href="#integrantes">Integrantes</a></li>
+          <li><a href="#discos">Discos</a></li>
+          <li><a href="#videos">Videos Musicales</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="box-contenido">
+        <h2 class="heading-historia" id="historia">Historia Banda</h2>
+
+        <div class="imagen-historia">
+          <img
+            class="imagen-banda"
+            src="/imgs/bandaSoda.avif"
+            alt="soda setero "
+          />
+        </div>
+        <p class="texto-historia">
+          Soda Stereo, una de las bandas más influyentes y trascendentales en la
+          historia del rock latino, se formó en Buenos Aires, Argentina, en
+          1982. Sus miembros fundadores fueron Gustavo Cerati en voz y guitarra,
+          Zeta Bosio en bajo y Charly Alberti en batería. Juntos, forjaron un
+          camino audaz y revolucionario en la escena musical. En sus primeros
+          años, Soda Stereo fusionó el post-punk con el new wave, creando un
+          sonido distintivo y fresco en la escena musical argentina. Su álbum
+          debut homónimo, lanzado en 1984, mostró su potencial y capturó la
+          atención del público local. Sin embargo, fue con su segundo álbum,
+          "Nada Personal" (1985), que comenzaron a ganar reconocimiento a nivel
+          nacional.
+        </p>
+        <p><a href="#menu">volver menu</a></p>
+      </div>
+      <div class="box-contenido">
+        <h2 class="heading-integrantes" id="integrantes">Integrantes</h2>
+
+        <div class="integrantes-grid">
+          <div class="cerati-box">
+            <img
+              class="imagen-cerati"
+              src="/imgs/cerati.jpg"
+              alt="Gustavo Cerati"
+            />
+            <h3>Gustavo Cerati</h3>
+            <p class="texto-integrantes">
+              Gustavo Adrián Cerati (Buenos Aires, 11 de agosto de 1959-Buenos
+              Aires, 4 de septiembre de 2014) fue un músico, cantautor,
+              multinstrumentista y productor discográfico argentino que obtuvo
+              reconocimiento internacional por haber sido el líder, vocalista,
+              compositor y guitarrista de la banda de rock Soda Stereo. Parte de
+              la prensa especializada y músicos lo consideran como uno de los
+              artistas más influyentes del rock latinoamericano.
+            </p>
+          </div>
+
+          <div class="zeta-box-box">
+            <img class="imagen-zeta" src="/imgs/zeta.jpg" alt="Zeta Bosio" />
+            <h3>Zeta Bosio</h3>
+            <p class="texto-integrantes">
+              Héctor Pedro Juan Bosio (San Fernando, 1 de octubre de 1958), más
+              conocido como Zeta Bosio, es un músico de rock, productor
+              discográfico y DJ argentino que junto con Gustavo Cerati y Charly
+              Alberti, fue el bajista de la banda de rock en español Soda
+              Stereo. Debido a esto, es considerado uno de los músicos más
+              importantes de rock latino y en español. Entre fines de 2013 y
+              abril de 2014 fue el bajista de la banda chilena La
+              Ley.Actualmente es miembro, líder y figura de la banda Shoot The
+              Radio, banda que fundó en 2015 junto a Fernando Montemuro.
+            </p>
+          </div>
+
+          <div class="charly-box">
+            <img
+              class="imagen-charly"
+              src="/imgs/charly.jpg"
+              alt="Charly Alberti"
+            />
+            <h3>Charly Alberti</h3>
+            <p class="texto-integrantes">
+              Carlos Alberto Ficicchia (Buenos Aires, 27 de marzo de 1963), más
+              conocido como Charly Alberti, es un músico de rock argentino. Fue
+              baterista de Soda Stereo y es líder y baterista de la banda Mole.
+              Actualmente, es activista de la protección del medio ambiente,
+              embajador ONU y fundador del grupo ambientalista R21 para una
+              Latinoamérica Sustentable.
+            </p>
+          </div>
+        </div>
+        <p><a href="#menu">volver menu</a></p>
+      </div>
+      <!--FINAL INTEGRANTES-->
+      <div class="box-contenido">
+        <h2 class="heading-integrantes" id="discos">Discos</h2>
+      </div>
+
+      <div class="discos-box box-contenido">
+        <div class="disco disco1">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="/imgs/disco1.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco1">
+            <h3 class="nombre-disco">Soda Stereo</h3>
+            <p class="year-disco">1984</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/3i4nU0OIi7gMmXDEhG9ZRt?si=RqG5Fk18TDKI9s88I_NOLQ"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/soda-stereo/321883646"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1214584?utm_source=deezer&amp;utm_content=album-1214584&amp;utm_term=3116352084_1569004743&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/SodaStereoaYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISCO 1-->
+        <div class="disco-2 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="/imgs/nada-personal.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Nada Personal</h3>
+            <p class="year-disco">1985</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/3i4nU0OIi7gMmXDEhG9ZRt?si=RqG5Fk18TDKI9s88I_NOLQ"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/soda-stereo/321883646"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1214584?utm_source=deezer&amp;utm_content=album-1214584&amp;utm_term=3116352084_1569004743&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/SodaStereoaYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISC 2-->
+        <div class="disco3 disco">
+          <div class="box-imagen-disco3">
+            <img
+              class="imagen-disco"
+              src="/imgs/signos.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Signos</h3>
+            <p class="year-disco">1986</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/7s2lDvm4FwnWE5RXEoY8Gi?si=vKb8ibjWQ-G1xTJKU5LhLg"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/signos/321882453"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1214583?utm_source=deezer&amp;utm_content=album-1214583&amp;utm_term=3116352084_1569007479&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/SignosYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISC 3-->
+        <div class="disco4 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="imgs/ruido-blanco.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Ruido Blanco</h3>
+            <p class="year-disco">1987</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/6cu5hIiTmKPL61p8nhpXp6?si=5FFDkiFPRJWihTRTYbnrRA"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/ruido-blanco/321882717"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1222509?utm_source=deezer&amp;utm_content=album-1222509&amp;utm_term=3116352084_1569007687&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/RuidoBlancoYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISCO 4-->
+        <div class="disco5 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="imgs/doble-vida.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Doble Vida</h3>
+            <p class="year-disco">1988</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/0mEY1U7SZdIwDWylFm2UC4?si=z1c-CPTcS9S4aBiSyABo1A"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/doble-vida/321882524"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1222450?utm_source=deezer&amp;utm_content=album-1222450&amp;utm_term=3116352084_1569007770&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="http://smarturl.it/DobleVidaYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISCO 5-->
+        <div class="disco6 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="imgs/languis.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Languis</h3>
+            <p class="year-disco">1989</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/0m1Jpz8kxFIewCTy2NdkVt?si=WEX-0_UbSTihWLDy8ZJCDQ"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/languis-ep/321886271"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1222542?utm_source=deezer&amp;utm_content=album-1222542&amp;utm_term=3116352084_1569007827&amp;utm_medium=web"
+                  target="_blank"
+                >
+                  deezer
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/LanguisYM"
+                  style="font-size: 11px; margin-top: 1rem"
+                  class="fab fa-youtube"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISCO 6-->
+        <div class="disco7 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="/imgs/cancion-animal.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Cancion Animal</h3>
+            <p class="year-disco">1990</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/3GoSlKTNcVOp1ZxE5OOXeN?si=GPToKAlhSASZHgIxN9HzUw"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/canci%C3%B3n-animal/32188275"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1222449?utm_source=deezer&amp;utm_content=album-1222449&amp;utm_term=3116352084_1569007882&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/CancionAnimalYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISC 7-->
+        <div class="disco8 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="/imgs/rex-mix.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Rex Mix</h3>
+            <p class="year-disco">1991</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/1OPsfxGYBniKd1qWi05f2K?si=2rdum7f6S3KZKgvX_ITSXg"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/rex-mix/321882065"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1222445?utm_source=deezer&amp;utm_content=album-1222445&amp;utm_term=3116352084_1569007926&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/RexMixYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISC 8-->
+        <div class="disco-2 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="/imgs/dynamo.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Dynamo</h3>
+            <p class="year-disco">1992</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/4bfwXuecOmNVlPM5RStAiQ?si=CbvLTDG6TSeRqcwTboa0Kw"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/dynamo/321884222"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1222448?utm_source=deezer&amp;utm_content=album-1222448&amp;utm_term=3116352084_1569008006&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/DynamoYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISC 9-->
+        <div class="disco10 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="/imgs/zona-de-promesas.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Zona De Promesas</h3>
+            <p class="year-disco">1993</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/6Vxa62nfEzoFx8kc8lhpj1?si=FTPLZBmEQv6Rb9GM74S7Sg"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/zona-de-promesas-mixes-1984-1993/1199713157"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/15193407?utm_source=deezer&amp;utm_content=album-15193407&amp;utm_term=3116352084_1569008091&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/ZonaDePromesasYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISC 10-->
+        <div class="disco11 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="/imgs/sueno-stereo.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Sueño Stereo</h3>
+            <p class="year-disco">1995</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/1A3VRbn7Kto2ov0LkSY0eg?si=0PtLp7eoRo651-6bOsHg7Q"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/sue%C3%B1o-stereo/309452426"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/1222444?utm_source=deezer&amp;utm_content=album-1222444&amp;utm_term=3116352084_1569008121&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://smarturl.it/SuenoStereoYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                  style="font-size: 11px; margin-top: 1rem"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISC 11-->
+        <div class="disco-2 disco">
+          <div class="box-imagen-disco1">
+            <img
+              class="imagen-disco"
+              src="/imgs/sep7imo-dia.jpg"
+              alt="disco1 soda"
+            />
+          </div>
+          <div class="contenido-disco2">
+            <h3 class="nombre-disco">Septimo dia</h3>
+            <p class="year-disco">2017</p>
+            <ul class="disco-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/album/0HUncweJW3LTO0YOvOEX4a?si=JIZ8WfmpQ_-9bHYQHYESdw"
+                  target="_blank"
+                  class="fab fa-spotify"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://music.apple.com/cl/album/sep7imo-dia/1208782020"
+                  target="_blank"
+                  class="fab fa-apple"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.deezer.com/album/15578984?utm_source=deezer&amp;utm_content=album-15578984&amp;utm_term=3116352084_1569008277&amp;utm_medium=web"
+                  target="_blank"
+                  >deezer</a
+                >
+              </li>
+              <li>
+                <a
+                  style="font-size: 11px; margin-top: 1rem"
+                  href="http://smarturl.it/SEPTIMODIAYM"
+                  target="_blank"
+                  class="fab fa-youtube"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--FINAL DISC 12-->
+        <p><a href="#menu">volver menu</a></p>
+      </div>
+
+      <div class="box-contenido">
+        <h2 class="heading-integrantes" id="videos">Videos Musicales</h2>
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_GZiCe00zVY?si=XpixW5LcrF2O6Q-A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p><a href="#menu">volver menu</a></p>
+      </div>
+    </main>
+  </body>
+</html>
